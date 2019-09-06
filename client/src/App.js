@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import axios from "axios";
 import PlayerCard from "./components/PlayerCard";
 
 class App extends React.Component {

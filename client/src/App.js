@@ -21,6 +21,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <h1>Soccer Players (Name, Country, and Search Volume)</h1>
+        <p>Note: they are listed in order of popularity.</p>
         <PlayerCard players={this.state.players}/>
       </div>
     )

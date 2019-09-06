@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import PlayerCard from "./components/PlayerCard";
+import DarkModeButton from "./components/DarkModeButton";
 
 class App extends React.Component {
   state = {
@@ -11,7 +12,7 @@ class App extends React.Component {
     fetch('http://localhost:5000/api/players')
       .then(response => response.json())
       .then(response => this.setState({ players: response }))
-      .catch(err => console.log(err))   
+      .catch(err => console.log(err))
   }
 
   componentDidMount() {
@@ -23,7 +24,8 @@ class App extends React.Component {
       <div className="App">
         <h1>Soccer Players (Name, Country, and Search Volume)</h1>
         <p>Note: they are listed in order of popularity.</p>
-        <PlayerCard players={this.state.players}/>
+        <DarkModeButton />
+        <PlayerCard players={this.state.players} />
       </div>
     )
   }

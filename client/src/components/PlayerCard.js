@@ -11,7 +11,7 @@ export default function PlayerCard (props) {
                         <h3>{player.country}</h3>
                         <p>Searches: {player.searches}</p>
                     </div>
-            ))}
+                ))}
             </div>
         </>
     )

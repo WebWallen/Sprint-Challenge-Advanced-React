@@ -42,3 +42,8 @@
   border: 1px solid black;
   width: 33vw;
 }
+
+.dark-mode {
+  color: #fff;
+  background-color: #313843;
+}

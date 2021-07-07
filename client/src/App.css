@@ -31,3 +31,19 @@
     transform: rotate(360deg);
   }
 }
+
+.players-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 20px;
+}
+
+.player-card {
+  border: 1px solid black;
+  width: 33vw;
+}
+
+.dark-mode {
+  color: #fff;
+  background-color: #313843;
+}
